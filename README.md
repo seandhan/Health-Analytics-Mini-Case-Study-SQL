@@ -60,12 +60,6 @@ For users that have blood pressure measurements:
 
 The provided `health.user_logs` dataset contains the following variables:
 
-1. id
-2. log_date
-3. measure
-4. measure_value
-5. systolic
-6. diastolic
 
 | id                                       | log\_date                | measure        | measure\_value | systolic | diastolic |
 | ---------------------------------------- | ------------------------ | -------------- | -------------- | -------- | --------- |
@@ -75,7 +69,7 @@ The provided `health.user_logs` dataset contains the following variables:
 
 ## Data Source
 
-The  `health.user_logs` dataset was provided as an excel file Click [here](https://github.com/seandhan/Health-Analytics-Mini-Case-Study-SQL/blob/main/user_logs.csv)
+The  `health.user_logs` dataset was provided as an excel file. Click [here](https://github.com/seandhan/Health-Analytics-Mini-Case-Study-SQL/blob/main/user_logs.csv)
 
 
 ---
@@ -86,59 +80,59 @@ For this analysis the excel file was imported in Microsoft SQL Server and MSSQL 
 
 See the following steps for more detailed procedure for importing Excel files into SQL Server to create databases.
 >
->Step 1: Prepare Your Excel File
+>**Step 1: Prepare Your Excel File**
 >
 >Ensure your Excel file is organized with a header row and data in subsequent rows.
 >Verify that the column names and data types in the Excel file match the table structure you want to create in SQL Server.
 >
->Step 2: Set Up SQL Server
+>**Step 2: Set Up SQL Server**
 >
 >Ensure you have SQL Server installed and configured on your system.
 >Create a new database or identify an existing one where you want to import the data.
 >
->Step 3: Install Required Drivers
+>**Step 3: Install Required Drivers**
 >
 >Check if you have the necessary ODBC or OLE DB drivers installed on your system. If not, you may need to install them. You can usually find these drivers in the SQL Server installation package.
 >
->Step 4: Open SQL Server Management Studio (SSMS)
+>**Step 4: Open SQL Server Management Studio (SSMS)**
 >
 >Launch SQL Server Management Studio (SSMS) on your computer.
 >
->Step 5: Connect to SQL Server
+>**Step 5: Connect to SQL Server**
 >
 >Connect to your SQL Server instance by providing the server name and appropriate authentication method (Windows or SQL Server Authentication).
 >
->Step 6: Import Data Using the SQL Server Import and Export Wizard
+>**Step 6: Import Data Using the SQL Server Import and Export Wizard**
 >
 >In SSMS, right-click on the database where you want to import the data, and choose "Tasks" > "Import Data."
 >
->Step 7: SQL Server Import and Export Wizard - Introduction
+>**Step 7: SQL Server Import and Export Wizard - Introduction**
 >
 >In the SQL Server Import and Export Wizard, you'll see an introduction screen. Click "Next" to proceed.
 >
->Step 8: Data Source
+>**Step 8: Data Source**
 >
 >Choose the "Data Source" as "Microsoft Excel." Click "Browse" to locate your Excel file.
 Specify the version of the Excel file (Excel 97-2003 or Excel 2007+).
 Select the appropriate Excel worksheet if your file contains multiple sheets. Click "Next."
 >
->Step 9: Destination
+>**Step 9: Destination**
 >
 >Choose the "Destination" as "SQL Server Native Client."
 Enter your SQL Server connection details, including the server name, authentication method, and database name.
 Click "Next" to proceed.
 >
->Step 10: Copy Data from Excel
+>**Step 10: Copy Data from Excel**
 >
 >In the "Copy data from one or more tables or views" section, you can choose to copy data from the Excel file into an existing table in your database or create a new table.
 If creating a new table, you can map the Excel columns to SQL Server table columns. Ensure that data types match correctly. You can also set options for handling duplicate records.
 Click "Next" to continue.
 >
->Step 11: Review and Execute
+>**Step 11: Review and Execute**
 >
 >Review the settings you've configured. If everything looks correct, click "Next."
 >
->Step 12: Complete the Wizard
+>**Step 12: Complete the Wizard**
 >
 >The wizard will now run the import process, and you'll see a summary of the operation.
 Check for any error messages or warnings. If there are any issues, you can review the details and correct them.
