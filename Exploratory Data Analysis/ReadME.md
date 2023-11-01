@@ -1,7 +1,8 @@
 # 1. Exploratory Data Analysis
 
 ---
-
+<details>
+<summary>Import Libraries & Database connection</summary>
 <span style = "font-family: Arial; font-weight:bold;font-size:2em;color:black;">Importing Libraries
 
 
@@ -39,6 +40,7 @@ except pyodbc.Error as ex:
     Connected to SQL database Server: SeanSD\SQLEXPRESS 
     Database: health
     
+</details>
 
 ---
 
