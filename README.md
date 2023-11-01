@@ -1,3 +1,9 @@
+[![forthebadge](https://github.com/seandhan/Scale-Model-Cars-Database-Analysis/blob/main/images/USES-SQLITE-.svg)]()
+[![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-markdown.svg)](https://forthebadge.com)
+
+
+
 # Health Analytics Mini Case Study (SQL)
 ---
 
