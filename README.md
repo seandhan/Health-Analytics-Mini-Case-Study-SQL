@@ -1,6 +1,12 @@
-[![forthebadge](https://github.com/seandhan/Scale-Model-Cars-Database-Analysis/blob/main/images/USES-SQLITE-.svg)]()
+[![forthebadge](https://github.com/seandhan/Health-Analytics-Mini-Case-Study-SQL/blob/main/images/USES-SQL%20SERVER-.svg)]()
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/made-with-markdown.svg)](https://forthebadge.com)
+
+<h1 align="center">Health Analytics Mini Case Study (SQL) ☤ </h1>
+
+
+<p align="center">The primary objective of this project is to conduct an in-depth analysis of data from a sales records database, with the intent of extracting meaningful insights that can be employed to enhance decision-making processes. 
+  </p>
 
 
 
