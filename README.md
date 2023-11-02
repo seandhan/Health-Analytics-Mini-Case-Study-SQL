@@ -5,88 +5,50 @@
 <h1 align="center">Health Analytics Mini Case Study (SQL) ☤ </h1>
 
 
-<p align="center">The primary objective of this project is to conduct an in-depth analysis of data from a sales records database, with the intent of extracting meaningful insights that can be employed to enhance decision-making processes. 
-  </p>
+<p align="center">The primary objective of this project is to conduct an analysis of Health Co patient data to advise the Analytics General Manager for his upcoming board meeting.</p>
 
-
-
-# Health Analytics Mini Case Study (SQL)
 ---
 
-## Project Description
+## 📝 Table of Contents
 
-The General Manager of Analytics at Health Co has urgently requested help analyzing their `health.user_logs` dataset. 
+- [🤓 Description](#description)
+- [💻 Dataset Overview](#dataset-overview)
+- [📊 Exploratory Data Analysis](#exploratory-data-analysis)
+- [🚀 Business Questions](#business-questions)
+- [📗 Notebooks](#notebooks)
+- [📧 Contact Information](#contact-information)
+
+## 🤓 Description <a name = "description"></a>
+
+The General Manager of Analytics at Health Co has urgently requested help analysing their `user_logs` dataset.
 
 We have been asked to quickly analyse the dataset and answer questions about active users for an upcoming board meeting.
 
----
-
-## Table of Contents
-
-- [Skills and Tools Used](#skills-and-tools-used)
-- [Business Questions](#business-questions)
-- [Dataset Info](#dataset-info)
-- [Data Source](#data-source)
-- [Code](#code)
-- [Database Exploration](#database-exploration)
-- [Lessons Learnt](#Lessons-Learnt)
-- [Contact Information](#contact-information)
+The primary goal of this undertaking is to comprehensively investigate the provided dataset and furnish well-informed responses, driven by data, to the questions posed by our client.
 
 ---
 
-## Skills and Tools Used
+## 💻 Dataset Overview <a name = "dataset-overview"></a>
 
-- SQL
-- Python
-- Pandas
-- Pyodbc
-- Jupyter Notebook
+The Records Department have supplied the `user_logs` dataset in an excel csv format. The file can be accessed through the following link:
 
----
+### Click to view 👇:
 
+[![Data_link](https://github.com/seandhan/image_database/blob/main/Data-LINK-.svg)](https://github.com/seandhan/Health-Analytics-Mini-Case-Study-SQL/blob/main/user_logs.csv)
 
-## Business Questions
+----
+The provided `user_logs` dataset contains the following variables:
 
-Let’s cover the business questions that we need to help the GM answer!
+| id  | log\_date  | measure | measure\_value | systolic | diastolic |
+| --- | ---------- | --------| -------------- | -------- | --------- |
 
-1. How many unique users exist in the logs dataset?
-2. How many total measurements do we have per user on average?
-3. What about the median number of measurements per user?
-4. How many users have 3 or more measurements?
-5. How many users have 1,000 or more measurements?
-
-Looking at the logs data - what is the number and percentage of the active user base who:
-
-6. Have logged blood glucose measurements?
-7. Have at least 2 types of measurements?
-8. Have all 3 measures - blood glucose, weight and blood pressure?
-
-For users that have blood pressure measurements:
-
-9. What is the median systolic/diastolic blood pressure values?
-
----
-
-## Dataset Info
-
-
-The provided `health.user_logs` dataset contains the following variables:
-
-
-| id                                       | log\_date                | measure        | measure\_value | systolic | diastolic |
-| ---------------------------------------- | ------------------------ | -------------- | -------------- | -------- | --------- |
 
 
 ---
 
-## Data Source
-
-The  `health.user_logs` dataset was provided as an excel file. Click [here](https://github.com/seandhan/Health-Analytics-Mini-Case-Study-SQL/blob/main/user_logs.csv)
-
-
----
-
-### Dataset preparation
+<details>
+<summary>Dataset preparation</summary>
+<br>
 
 For this analysis the excel file was imported in Microsoft SQL Server and MSSQL queries were used to explore the data. A `health` database was created with `user_logs` table. 
 
@@ -155,108 +117,70 @@ Once the import is successful, click "Finish" to complete the wizard.
 >Open SSMS, connect to your SQL Server database, and query the newly imported data to ensure it has been successfully transferred.
 Your Excel data is now available in your SQL Server database, and you can use it to create tables, views, or perform other necessary operations. After importing, consider any additional data cleaning or transformation tasks as required for your specific use case.
 
----
-
-## Code
-
-The code used to the explore this database can be found in the Jupyter notebook. Click [HERE](https://github.com/seandhan/Health-Analytics-Mini-Case-Study-SQL/blob/main/Health%20Analytics%20Mini%20Case%20Study.ipynb) 
+</details>
 
 ---
 
-## Database Exploration
+## 📊 Exploratory Data Analysis <a name = "exploratory-data-analysis"></a>
 
-There are 3 unique measures
+The database was accessed and explored using Python and SQL SERVER.
+
+### Click to view 👇:
+
+[![Exploratory Data Analysis](https://github.com/seandhan/image_database/blob/main/Solution-Exploratory%20Data%20Analysis-.svg)](https://github.com/seandhan/Health-Analytics-Mini-Case-Study-SQL/blob/main/Exploratory%20Data%20Analysis/ReadME.md)
+
+---
 
 
-![Unique measures.png](https://github.com/seandhan/Health-Analytics-Mini-Case-Study-SQL/blob/main/images/Unique%20measures.png)
+
+## 🚀 Business Questions <a name = "business-questions"></a>
+
+Let’s cover the business questions that we need to help the GM answer!
+
+1. How many unique users exist in the logs dataset?
+2. How many total measurements do we have per user on average?
+3. What about the median number of measurements per user?
+4. How many users have 3 or more measurements?
+5. How many users have 1,000 or more measurements?
+
+Looking at the logs data - what is the number and percentage of the active user base who:
+
+6. Have logged blood glucose measurements?
+7. Have at least 2 types of measurements?
+8. Have all 3 measures - blood glucose, weight and blood pressure?
+
+For users that have blood pressure measurements:
+
+9. What is the median systolic/diastolic blood pressure values?
 
 
-### Overview
+### Click to view 👇:
 
-The database summary is as follows:
+[![Solution-Business Questions](https://github.com/seandhan/image_database/blob/main/Solution-Business%20Questions-.svg)](https://github.com/seandhan/Health-Analytics-Mini-Case-Study-SQL/blob/main/Business%20Questions/ReadMe.md)
 
-![Table summary.png](https://github.com/seandhan/Health-Analytics-Mini-Case-Study-SQL/blob/main/images/Table%20summary.png)
 
 
 ---
 
-## 1. How many unique users exist in the logs dataset?
 
-![q1.png](https://github.com/seandhan/Health-Analytics-Mini-Case-Study-SQL/blob/main/images/q1.png)
+## 📗 Notebooks <a name = "notebooks"></a>
 
-There are **554** unique users in the dataset.
+The Notebook for the "Exploratory Data Analysis" can be accessed below:
 
----
-## 2. How many total measurements do we have per user on average?
+### Click to view 👇:
 
-![q2.png](https://github.com/seandhan/Health-Analytics-Mini-Case-Study-SQL/blob/main/images/q2.png)
+[![EDA Notebook](https://github.com/seandhan/image_database/blob/main/Notebook-Exploratory%20Data%20analysis-.svg)](https://github.com/seandhan/Health-Analytics-Mini-Case-Study-SQL/blob/main/Notebooks/Exploratory%20Data%20Analysis.ipynb)
 
-The average measurements per user is **79** measurements.
+The Notebook for the "Business Questions" can be accessed below:
 
----
+### Click to view 👇:
 
-## 3. What about the median number of measurements per user?
+[![Questions Notebook](https://github.com/seandhan/image_database/blob/main/Notebook-Business%20Questions-.svg)](https://github.com/seandhan/Health-Analytics-Mini-Case-Study-SQL/blob/main/Notebooks/Business%20Questions.ipynb)
 
-![q3.png](https://github.com/seandhan/Health-Analytics-Mini-Case-Study-SQL/blob/main/images/q3.png)
-
-The median measurement per user is **2**.
-
----
-## 4. How many users have 3 or more measurements?
-
-![q4.png](https://github.com/seandhan/Health-Analytics-Mini-Case-Study-SQL/blob/main/images/q4.png)
-
-**209** users have 3 or more measurements.
-
----
-## 5. How many users have 1,000 or more measurements?
-
-![q5.png](https://github.com/seandhan/Health-Analytics-Mini-Case-Study-SQL/blob/main/images/q5.png)
-
-There are **5** users with 1,000 or more measurements..
-
----
-## 6. What is the number and percentage of the active user base who have logged blood glucose measurements?
-
-![q6.png](https://github.com/seandhan/Health-Analytics-Mini-Case-Study-SQL/blob/main/images/q6.png)
-
-There are **325** users or **40%** of user base who have logged blood glucose measurements.
-
----
-## 7. What is the number and percentage of the active user base who have at least 2 types of measurements?
-
-![q7.png](https://github.com/seandhan/Health-Analytics-Mini-Case-Study-SQL/blob/main/images/q7.png)
-
-Out of **554** active users, **204** users have at least 2 types of measurements making up **37%** of total active user base.
-
----
-## 8. What is the number and percentage of the active user base who have all 3 measures - blood glucose, weight and blood pressure?
-
-![q8.png](https://github.com/seandhan/Health-Analytics-Mini-Case-Study-SQL/blob/main/images/q8.png)
-
-Out of **554** active users, **50** users have taken all 3 measures making up **9%** of total active user base.
-
----
-## 9. For users that have blood pressure measurements, what is the median systolic/diastolic blood pressure values?
-
-![q9.png](https://github.com/seandhan/Health-Analytics-Mini-Case-Study-SQL/blob/main/images/q9.png)
-
-The median for systolic and diastolic are 126 and 79.
 
 ---
 
-## Lessons Learnt
-
-1. Microsoft SQL Server
-
-2. Debugging Code
-
-3. Summary statisitcs (mean & median)
-
-4. Sorting & filtering Data
-
-
-## Contact Information
+## 📧 Contact Information <a name = "contact-information"></a>
 
 - Email: [sean_dhanasar@msn.com](mailto:sean_dhanasar@msn.com)
 - LinkedIn: [Sean Dhanasar](https://www.linkedin.com/in/sdhanasar)
