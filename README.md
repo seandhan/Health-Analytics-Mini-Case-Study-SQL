@@ -1,6 +1,10 @@
-[![forthebadge](https://github.com/seandhan/Health-Analytics-Mini-Case-Study-SQL/blob/main/images/USES-SQL%20SERVER-.svg)]()
-[![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/made-with-markdown.svg)](https://forthebadge.com)
+<p align="center">
+  <img src="https://github.com/seandhan/Health-Analytics-Mini-Case-Study-SQL/blob/main/images/USES-SQL%20SERVER-.svg" />&nbsp;&nbsp;&nbsp;
+  <img src="https://forthebadge.com/images/badges/made-with-python.svg" />&nbsp;&nbsp;&nbsp;
+  <img src="https://forthebadge.com/images/badges/made-with-markdown.svg" />&nbsp;&nbsp;
+</p>
+
+
 
 <h1 align="center">Health Analytics Mini Case Study (SQL) ☤ </h1>
 
